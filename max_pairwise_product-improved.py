@@ -1,3 +1,15 @@
+""" 
+
+Inputs : 
+4
+5 2 3 6
+
+Output :
+30  
+
+"""
+
+# very base line code 
 def max_pairwise_product(numbers):
     n = len(numbers)
     max_product = 0
