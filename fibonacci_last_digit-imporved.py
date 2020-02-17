@@ -1,7 +1,7 @@
 # Uses python3
 
 """
- -  The last digit of Fibonacci follows a pattern! I found the pattern and then applied it to this code. 
+ -  The last digit of Fibonacci follows a pattern! I found the pattern using the ( naive methods ) and then applied it to this code. 
  
 """
 import sys
