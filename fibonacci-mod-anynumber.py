@@ -39,7 +39,7 @@ def get_fibonacci_huge_improved(n, m):
 
 
 if __name__ == '__main__':
-    #input = sys.stdin.read();
-    input = input()
+    input = sys.stdin.read();
+    #input = input()
     n, m = map(int, input.split())
     print(get_fibonacci_huge_improved(n, m))
