@@ -32,7 +32,7 @@ def get_fibonacci_huge_improved(n, m):
         previous, current = current, previous + current
         remainder.append(current % m)
         if previous % m == 0 and current % m == 1:
-            y = n % len(remainder[:-1])
+            y = n % len(remainder[:-2])
 
     return remainder[y]
 
