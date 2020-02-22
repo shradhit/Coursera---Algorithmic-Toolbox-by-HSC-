@@ -12,12 +12,9 @@ def get_optimal_new(capacity, weights, values):
     for i in sorted(value_perunit_weight_dict, reverse=True):
         value_perunit_weight_dict_sorted.update({i:value_perunit_weight_dict[i]})
     while capacity and j < len(value_perunit_weight_dict_sorted):
-        #print('abc')
-        #print(list(value_perunit_weight_dict_sorted.keys())[j])
         max_value_rn = list(value_perunit_weight_dict_sorted.keys())[j]
         max_value_index = value_perunit_weight_dict_sorted.get(max_value_rn)
         check = capacity - weights[max_value_index]
-        #print(j)
         j += 1
         #print(j)
         if check > 0 :
@@ -35,9 +32,7 @@ if __name__ == "__main__":
     data = list(map(int, sys.stdin.read().split()))
     n, capacity = data[0:2]
     values = data[2:(2 * n + 2):2]
-    #print(values)
     weights = data[3:(2 * n + 2):2]
-    #print(weights)
     opt_value = get_optimal_new(capacity, weights, values)
     print("{:.10f}".format(opt_value))
 
