@@ -13,7 +13,7 @@ def binary_search(a, x):
         elif (a[mid + 1] <= x) and (x <= a[right]):
             left = mid + 1
         elif a[left] > a[mid]:
-            r = mid
+            right = mid
         else:
             left = mid + 1
     if a[left] == x:
